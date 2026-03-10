@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saeveznic - Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset margin dan padding bawaan browser */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pengaturan latar belakang putih dan teks hitam */
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Mengatur agar tampilan menyesuaikan layar HP */
+        .container {
+            width: 100%;
+            max-width: 480px; 
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Gaya untuk logo foto */
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Membuat foto menjadi bulat */
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #000000; /* Garis tepi hitam untuk mempertegas logo */
+            background-color: #fff;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #333333;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        /* Gaya untuk tombol tautan */
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #000000; /* Tombol warna hitam */
+            color: #ffffff; /* Teks dalam tombol warna putih */
+            padding: 18px 20px;
+            margin-bottom: 16px;
+            border-radius: 30px; /* Ujung tombol melengkung */
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            position: relative;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Efek saat tombol disentuh/didekati kursor */
+        .link-btn:hover {
+            background-color: #333333;
+            transform: scale(1.02);
+        }
+
+        /* Posisi ikon di dalam tombol */
+        .link-icon {
+            position: absolute;
+            left: 24px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="foto/Logo.jpeg" alt="Saeveznic Logo" class="profile-pic">
+
+        <h1 class="title">Saeveznic</h1>
+        <p class="description">
+            Perumnas, Jl. Jalaprang Jl. Surapati No.51 Blok D4,<br>
+            Sukaluyu, Kec. Cibeunying Kaler,<br>
+            Kota Bandung, Jawa Barat 40123
+        </p>
+
+        <a href="https://wa.me/6287777220390" target="_blank" class="link-btn">
+            <i class="fab fa-whatsapp link-icon"></i>
+            WhatsApp Order
+        </a>
+
+        <a href="https://www.instagram.com/saeveznic?igsh=anl1c2dwbHRzamUy" target="_blank" class="link-btn">
+            <i class="fab fa-instagram link-icon"></i>
+            Instagram
+        </a>
+
+        <a href="#" target="_blank" class="link-btn">
+            <i class="fas fa-shopping-bag link-icon"></i>
+            Order via Shopee
+        </a>
+    </div>
+
+</body>
+</html>
